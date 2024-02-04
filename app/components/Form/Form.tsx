@@ -14,8 +14,8 @@ export default function Form() {
   }, [key, message])
 
   return (
-    <div className="w-1/4 mt-12 flex flex-col items-center">
-      <form className="flex flex-col items-start w-full">
+    <div className="w-11/12 sm:w-1/2 xl:w-1/4 mt-12 flex flex-col items-center">
+      <form className="flex flex-col items-start w-full p-2 bg-[#f5dabb]">
         <p className="text-neutral-600">Action</p>
         <div className="flex">
           <div >
@@ -59,7 +59,7 @@ export default function Form() {
           className="border border-black w-full pl-1 mt-1"
         />
       </form>
-      <div className="w-full h-32 mt-8">
+      <div className="w-full h-32 mt-4 bg-[#a7d3f8] p-2">
         <h2 className="font-semibold">{action == "encipher" ? 'Enciphered ' : 'Deciphered '} message</h2>
         <p>{encodedMessage}</p>
       </div>
